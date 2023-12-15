@@ -27,6 +27,7 @@ class _LoginPageState extends State<LoginPage> {
         passwordController.text,
       );
     } catch (e) {
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
@@ -61,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
 
                 //welcome back message
                 const Text(
-                  "Welcome back you\'ve been missed!",
+                  "Welcome back you've been missed!",
                   style: TextStyle(
                     fontSize: 16,
                   ),
