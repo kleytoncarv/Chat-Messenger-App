@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32853315140",
+    "project_id": "chatapp-afb62",
+    "storage_bucket": "chatapp-afb62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32853315140:android:4bd9d3c97b70e12c4e7611",
+        "android_client_info": {
+          "package_name": "com.example.chat_messenger_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY4ADDPWYMBELhbEbBPGfqgOSLZe5GybE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
