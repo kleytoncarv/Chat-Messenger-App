@@ -3,7 +3,8 @@ import 'package:chat_messenger_app/components/my_text_field.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+  final void Function()? onTap;
+  const RegisterPage({super.key, required this.onTap});
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -16,9 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final confirmPasswordController = TextEditingController();
 
   // sign up user
-  void signUp() {
-    
-  }
+  void signUp() {}
 
   @override
   Widget build(BuildContext context) {
@@ -82,18 +81,19 @@ class _RegisterPageState extends State<RegisterPage> {
                 const SizedBox(height: 50),
 
                 //not remember
-                const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Already a member?'),
-                      SizedBox(width: 4),
-                      Text(
-                        'Login now',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ])
+                Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  const Text('Already a member?'),
+                  const SizedBox(width: 4),
+                  GestureDetector(
+                    onTap: widget.onTap,
+                    child: const Text(
+                      'Login now',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
+                ])
               ],
             ),
           ),
