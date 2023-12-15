@@ -1,16 +1,14 @@
 # chat_messenger_app
 
-A new Flutter project.
+Um projeto utilizando Flutter e Firebase.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+A ideia começou através de um projeto realizado no curso técnico do SENAI.
 
-A few resources to get you started if this is your first Flutter project:
+Objetivo principal: Criar um chat que possa ser aplicavél em qualquer aplicativo, com funções especificas para as variedades de nichos.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+App que será aplicado: O aplicativo escolhido no momento para aplicar esta ideia de chat é o AgenClean.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Gerente do projeto: Kleyton Carvalho.
