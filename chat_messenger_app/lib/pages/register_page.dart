@@ -41,8 +41,8 @@ class _RegisterPageState extends State<RegisterPage> {
       // Faça o que for necessário com o usuário, se necessário
     } catch (e) {
       // Lidar com erros aqui
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
           content: Text(e.toString()),
         ),
       );
