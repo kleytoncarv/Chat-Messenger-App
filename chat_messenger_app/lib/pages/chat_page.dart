@@ -46,6 +46,8 @@ class _ChatPageState extends State<ChatPage> {
 
             // user input
             _buildMessageInput(),
+
+            const SizedBox(height: 25),
           ],
         ));
   }
@@ -107,26 +109,29 @@ class _ChatPageState extends State<ChatPage> {
 
   // build message input
   Widget _buildMessageInput() {
-    return Row(
-      children: [
-        //textfield
-        Expanded(
-          child: MyTextField(
-            controller: _messageController,
-            hintText: 'Enter message',
-            obscureText: false,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+      child: Row(
+        children: [
+          //textfield
+          Expanded(
+            child: MyTextField(
+              controller: _messageController,
+              hintText: 'Enter message',
+              obscureText: false,
+            ),
           ),
-        ),
 
-        // send button
-        IconButton(
-          onPressed: sendMessage,
-          icon: const Icon(
-            Icons.arrow_upward,
-            size: 40,
+          // send button
+          IconButton(
+            onPressed: sendMessage,
+            icon: const Icon(
+              Icons.arrow_upward,
+              size: 40,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
